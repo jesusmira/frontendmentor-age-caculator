@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+  <div class="card-principal">
+    <form action="#" class="user-input">
+      <div class="control-day input-block" id="control-day">
+        <label for="day" id="lbl-day" class="cale-text">Day</label>
+        <input type="number" name="day" id="day" placeholder="DD" class="input-number">
+        
+      </div>
+      <div class="control-month input-block" id="control-month">
+        <label for="month" id="lbl-month" class="cale-text">Month</label>
+        <input type="number" name="month" id="month" placeholder="MM" class="input-number">
+      </div>
+      <div class="control-year input-block" id="control-year">
+        <label for="year" id="lbl-year" class="cale-text">Year</label>
+        <input type="number" name="year" id="year" placeholder="YYYY" class="input-number">
+      </div>
+      
+      <button type="button" class="btn-input" onclick="onClickEvent( event )"></button>
+    </form>
+    <div class=" results">
+      <label for="" id="res-years"><span id="spanYear">--</span> years</label>
+      <label for="" id="res-months"><span id="spanMonth">--</span> months</label>
+      <label for="" id="res-days"><span id="spanDay">--</span> days</label>  
+    </div>
+</div>
+  
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/jesusmira">jesusmira</a>.
+  </div>
+</body>
+</html>

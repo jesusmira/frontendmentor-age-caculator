@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root{
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body{
+    background-color: var(--light-grey);
+    font-family: "Poppins", sans-serif;
+    /* font-size: 32px; */
+    font-weight: 400;
+}
+.error {
+    font-size: 0.6rem;
+    color: var(--light-red);
+    font-weight: 700;
+    font-style: italic;
+    position: absolute;
+}
+.card-principal{
+    
+    background-color: hsl(0, 0%, 100%);
+    width: 60%;
+    max-width: 650px;
+    min-width: 470px;
+    border-radius: 35px;
+    border-bottom-right-radius: 175px;
+    padding: 40px;
+    margin: 0 auto;
+    ;
+}
+.card {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #040404;
+    font-size: 32px;
+    line-height: 1.2;
+    background-color: var(--light-grey);
+    width: 100vw; 
+    min-height: 90vh;
+    padding: 30px;
+}
+.btn-input{
+    position: absolute;
+    right: 0;
+    bottom: -33px;
+    width: 66px;
+    height: 66px;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.15s;
+    transition: background-color 0.4s;
+    scale: 1;
+}
+.btn-input::after{
+    content: "";
+    background-image: url(../assets/images/icon-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 55%;
+    height: 55%;
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    font-weight: 800;
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.attribution { 
+    color:var(--smokey-grey);
+    font-size: 12px; 
+    text-align: center; 
+    top: 20vh; 
+    
+}
+.attribution a { 
+    color: var(--smokey-grey);
+    text-decoration: none; 
+}
+.attribution a:focus,
+.attribution a:hover {
+    color: var(--off-white);
+}
+span {
+    color: var(--purple);
+}
+.input-block{
+    min-width: 90px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    
+}
+ .user-input {
+    max-width: 100%;
+    color: hsl(0, 1%, 44%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    position: relative;
+    margin-bottom: 50px;
+  } 
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+.error-input .input-number {
+    border: 1px solid var(--light-red);
+    outline: none;
+
+}
+.input-number {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+    font-weight: 700;
+    padding-left: 15px;
+    margin-bottom: 6px;
+    
+    /* margin-top: 20%; */
+    
+   
+    
+}
+.input-number:focus {
+    border: 1px solid var(--purple);
+    outline: none;
+}
+
+.cale-text{
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    display: contents;
+    
+    
+}
+.lblError{
+    font-size: 0.6rem;
+    color: var(--light-red);
+    font-weight: 400;
+    font-style: italic;
+    display: block;
+    
+}
+
+@media (max-width: 520px) {
+    .btn-input {
+      right: 50%;
+      margin-right: -29px;
+      bottom: -29px;
+      width: 58px;
+      height: 58px;
+    }
+    .card{
+        padding: 30px 15px;
+    }
+    .card-principal{
+        width: 100%;
+        min-width: 300px;
+        padding: 40px 20px;
+    }
+    .user-input{
+        padding-bottom: 50px;
+        margin-bottom: 35px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .results{
+        font-size: 3rem;
+    }
+    /* .lblError{
+        margin-top: 10vh;
+    } */
+  }
+  @media (max-width: 380px) {
+    .btn-input {
+      right: 50%;
+      margin-right: -26px;
+      bottom: -26px;
+      width: 52px;
+      height: 52px;
+    }
+    /* .lblError{
+        margin-top: 10vh;
+    } */
+  }
+
